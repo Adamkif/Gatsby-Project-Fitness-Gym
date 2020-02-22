@@ -24,7 +24,7 @@ const getData = graphql`
     image2: file(relativePath: { eq: "footer.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
